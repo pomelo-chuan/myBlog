@@ -1,7 +1,8 @@
 ---
 title: love
 date: 2017-03-16 19:40:35
-tags:
+tags: "street"
+categories: street
 ---
 *一个人最好的陪伴是什么？当然是自己。*
 
