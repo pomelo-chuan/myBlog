@@ -280,7 +280,7 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: a13a8e08cf335bd6c6ecb5ad1deb1768
 
 # Duoshuo ShortName
 duoshuo_shortname: pomelo-chuan
@@ -400,10 +400,10 @@ busuanzi_count:
 
 
 # Tencent analytics ID
-# tencent_analytics:
+tencent_analytics: 61287784
 
 # Tencent MTA ID
-# tencent_mta:
+# tencent_mta: 
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
