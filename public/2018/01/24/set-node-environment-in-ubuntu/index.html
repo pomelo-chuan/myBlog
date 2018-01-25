@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Develop in ubuntu | Pomelo</title>
+  <title>Set Node Environment in Ubuntu | Pomelo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Install Node.js download source code in Home page of Node.js  Unzip the binary archive to /usr/lib/nodejs 123sudo mkdir /usr/lib/nodejssudo tar -xJvf node-v8.9.4-linux-x64.tar.xz -C /usr/lib/nodejs su">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Develop in ubuntu">
-<meta property="og:url" content="http://yoursite.com/2018/01/24/develop-in-ubuntu/index.html">
+<meta property="og:title" content="Set Node Environment in Ubuntu">
+<meta property="og:url" content="http://yoursite.com/2018/01/24/set-node-environment-in-ubuntu/index.html">
 <meta property="og:site_name" content="Pomelo">
 <meta property="og:description" content="Install Node.js download source code in Home page of Node.js  Unzip the binary archive to /usr/lib/nodejs 123sudo mkdir /usr/lib/nodejssudo tar -xJvf node-v8.9.4-linux-x64.tar.xz -C /usr/lib/nodejs su">
-<meta property="og:updated_time" content="2018-01-24T14:45:04.000Z">
+<meta property="og:updated_time" content="2018-01-25T07:55:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Develop in ubuntu">
+<meta name="twitter:title" content="Set Node Environment in Ubuntu">
 <meta name="twitter:description" content="Install Node.js download source code in Home page of Node.js  Unzip the binary archive to /usr/lib/nodejs 123sudo mkdir /usr/lib/nodejssudo tar -xJvf node-v8.9.4-linux-x64.tar.xz -C /usr/lib/nodejs su">
   
     <link rel="alternate" href="/atom.xml" title="Pomelo" type="application/atom+xml">
@@ -56,9 +56,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -67,9 +67,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-develop-in-ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-set-node-environment-in-ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/01/24/develop-in-ubuntu/" class="article-date">
+    <a href="/2018/01/24/set-node-environment-in-ubuntu/" class="article-date">
   <time datetime="2018-01-24T14:22:59.000Z" itemprop="datePublished">2018-01-24</time>
 </a>
     
@@ -81,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Develop in ubuntu
+      Set Node Environment in Ubuntu
     </h1>
   
 
@@ -102,13 +102,23 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">. ~/.profile</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Test installation using</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="Install-yarn"><a href="#Install-yarn" class="headerlink" title="Install yarn"></a>Install yarn</h3><ol>
+<li><p>See <a href="https://yarnpkg.com/en/docs/install" target="_blank" rel="noopener">Home page of yarn</a></p>
+</li>
+<li><p>configure the repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"deb https://dl.yarnpkg.com/debian/ stable main"</span> | sudo tee /etc/apt/sources.list.d/yarn.list</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>use apt-get to install simply</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install yarn</span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/develop-in-ubuntu/" data-id="cjct6qn8v000009u2z8ewjfh3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/01/24/set-node-environment-in-ubuntu/" data-id="cjcu7c4ru0000mnja313irn66" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -119,7 +129,7 @@
   
   
     <a href="/2018/01/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -152,12 +162,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2018/01/24/develop-in-ubuntu/">Develop in ubuntu</a>
+            <a href="/2018/01/24/set-node-environment-in-ubuntu/">Set Node Environment in Ubuntu</a>
           </li>
         
           <li>
@@ -177,7 +187,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 Pomelo-chuan<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

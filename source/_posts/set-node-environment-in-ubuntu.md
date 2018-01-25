@@ -1,5 +1,5 @@
 ---
-title: Develop in ubuntu
+title: Set Node Environment in Ubuntu
 date: 2018-01-24 22:22:59
 tags:
 ---
@@ -31,4 +31,20 @@ export PATH=$NODEJS_HOME/bin:$PATH
 ```bash
 node -v
 npm -v
+```
+
+### Install yarn
+
+
+0. See [Home page of yarn](https://yarnpkg.com/en/docs/install)
+
+1. configure the repository:
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+2. use apt-get to install simply
+```bash
+sudo apt-get update
+sudo apt-get install yarn
 ```
