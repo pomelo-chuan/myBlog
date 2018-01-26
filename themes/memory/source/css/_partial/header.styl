@@ -1,13 +1,8 @@
 #header
   height: banner-height
   position: relative
-  border-bottom: 1px solid color-border
-  &:before, &:after
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    height: 40px
+  border-top: 5px solid black
+  border-bottom: 10px solid #D9D9D9
 
 #header-outer
   height: 100%
@@ -19,12 +14,10 @@
 
 #banner
   position: absolute
-  top: 0
-  left: 0
   width: 100%
   height: 100%
+  background-color: white
   background-size: cover
-  background: white
   z-index: -1
 
 #header-title
@@ -37,15 +30,20 @@
 
 $logo-text
   text-decoration: none
-  color: #fff
+  color: black
   font-weight: 300
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
 #logo
-  @extend $logo-text
+  color: white
+  background-color: black
+  text-decoration: none
+  padding: 5px
   font-size: logo-size
   line-height: logo-size
   letter-spacing: 2px
+
+#logo:hover
+  background-color: #424242
 
 #subtitle
   @extend $logo-text
@@ -84,6 +82,7 @@ $nav-link
   cursor: pointer
 
 .main-nav-link
+  color: black
   @extend $nav-link
   font-weight: 300
   letter-spacing: 1px
@@ -91,6 +90,7 @@ $nav-link
     display: none
 
 #main-nav-toggle
+  color: black
   display: none
   &:before
     content: "\f0c9"
@@ -102,10 +102,12 @@ $nav-link
   margin-right: -15px
 
 #nav-rss-link
+  color: black
   &:before
     content: "\f09e"
 
 #nav-search-btn
+  color: black
   &:before
     content: "\f002"
 
