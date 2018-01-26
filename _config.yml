@@ -7,12 +7,12 @@ title: Pomelo
 subtitle: Ese:wq 
 description: 依旧江山，无边云树
 author: Pomelo-chuan
-language:
-timezone:
+language: 
+timezone: CN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://pomelo-chuan.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -69,4 +69,7 @@ theme: memory
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:pomelo-chuan/pomelo-chuan.github.io.git
+  branch: master
+  message: 😀

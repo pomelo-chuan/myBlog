@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Pomelo</title>
+  <title>Hello World | Pomelo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="依旧江山，无边云树">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pomelo">
-<meta property="og:url" content="https://pomelo-chuan.github.io/index.html">
+  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://pomelo-chuan.github.io/2018/01/25/hello-world/index.html">
 <meta property="og:site_name" content="Pomelo">
-<meta property="og:description" content="依旧江山，无边云树">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:updated_time" content="2018-01-25T07:06:32.493Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pomelo">
-<meta name="twitter:description" content="依旧江山，无边云树">
+<meta name="twitter:title" content="Hello World">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
   
   
     <link rel="icon" href="/favicon.png">
@@ -62,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/25/hello-world/" class="article-date">
   <time datetime="2018-01-25T07:06:32.493Z" itemprop="datePublished">2018-01-25</time>
@@ -77,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/25/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      Hello World
     </h1>
   
 
@@ -105,71 +104,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-set-node-environment-in-ubuntu" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/24/set-node-environment-in-ubuntu/" class="article-date">
-  <time datetime="2018-01-24T14:22:59.000Z" itemprop="datePublished">2018-01-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/set-node-environment-in-ubuntu/">Set Node Environment in Ubuntu</a>
-    </h1>
+    <a href="/2018/01/24/set-node-environment-in-ubuntu/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Set Node Environment in Ubuntu</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Install-Node-js"><a href="#Install-Node-js" class="headerlink" title="Install Node.js"></a>Install Node.js</h3><ol>
-<li><p>download source code in <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Home page of Node.js</a></p>
-</li>
-<li><p>Unzip the binary archive to <strong>/usr/lib/nodejs</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/lib/nodejs</span><br><span class="line">sudo tar -xJvf node-v8.9.4-linux-x64.tar.xz -C /usr/lib/nodejs </span><br><span class="line">sudo mv /usr/lib/nodejs/node-v8.9.4-linux-x64 /usr/lib/nodejs/node-v8.9.4</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Set the environment variable <strong>~/.profile</strong>, add below to the end</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Nodejs</span></span><br><span class="line"><span class="built_in">export</span> NODEJS_HOME=/usr/lib/nodejs/node-v8.9.4</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$NODEJS_HOME</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Refresh profile</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">. ~/.profile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Test installation using</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="Install-yarn"><a href="#Install-yarn" class="headerlink" title="Install yarn"></a>Install yarn</h3><ol>
-<li><p>See <a href="https://yarnpkg.com/en/docs/install" target="_blank" rel="noopener">Home page of yarn</a></p>
-</li>
-<li><p>configure the repository:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"deb https://dl.yarnpkg.com/debian/ stable main"</span> | sudo tee /etc/apt/sources.list.d/yarn.list</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>use apt-get to install simply</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install yarn</span><br></pre></td></tr></table></figure></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://pomelo-chuan.github.io/2018/01/24/set-node-environment-in-ubuntu/" data-id="cjcvos04e0001gjjaauaf5nfr" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
